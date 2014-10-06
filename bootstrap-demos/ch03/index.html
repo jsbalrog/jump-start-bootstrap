@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My First Bootstrap Application</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+  <!-- navbar (goes outside container) -->
+  <div class="navbar navbar-default">
+    <div class="container-fluid"> <!-- creates a full-width container -->
+      <div class="navbar-header"> <!-- for branding purposes -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar-content"> <!-- shows only on smaller screens -->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">SitePoint</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="mynavbar-content"><!-- is the menu items -->
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">About<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Board of Members</a></li>
+              <li><a href="#">Developers</a></li>
+              <li><a href="#">Designers</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="page-header">
+      <h1>Chapter 3 <small>Exploring Bootstrap Components</small></h1>
+    </div>
+
+    <!-- Panels -->
+    <h2>Panels</h2>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        Attention
+      </div>
+      <div class="panel-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsum sequi neque beatae aut quod est esse corporis itaque odit minus eligendi at voluptas molestiae reiciendis, ea nostrum harum recusandae.
+      </div>
+      <div class="panel-footer">
+        <a href="#" class="btn btn-danger btn-sm">Agree</a>
+        <a href="#" class="btn btn-default btn-sm">Decline</a>
+      </div>
+    </div>
+
+    <hr/>
+
+    <!-- Media -->
+    <h2>Media</h2>
+    <div class="media">
+      <a class="pull-left" href="#">
+        <img class="media" src="sample.jpg" alt="Syed Fazle Rahman">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">Awesome piece of work!</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem in voluptates dolorum vero perferendis, eius sunt. Alias, fuga tenetur nam eligendi cupiditate ducimus ut amet dicta mollitia soluta. Sed, natus?</p>
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img class="media" src="sample.jpg" alt="Ted Jenkins">
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Say what?</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum dolore beatae ab, quae, architecto voluptates quia eligendi quam delectus laudantium maiores adipisci doloremque tenetur blanditiis doloribus, cupiditate porro vitae ipsam.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr/>
+
+    <!-- Thumbnails -->
+    <h2>Thumbnails</h2>
+    <div class="row">
+      <div class="col-xs-3">
+        <div class="thumbnail">
+          <img src="sample.jpg">
+          <div class="caption">
+            <h3>Caption goes here!</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-3">
+        <div class="thumbnail">
+          <img src="sample.jpg">
+          <div class="caption">
+            <h3>Caption goes here!</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-3">
+        <div class="thumbnail">
+          <img src="sample.jpg">
+          <div class="caption">
+            <h3>Caption goes here!</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-3">
+        <div class="thumbnail">
+          <img src="sample.jpg">
+          <div class="caption">
+            <h3>Guitar</h3>
+            <p>lorem blah blah blah ...</p>
+            <p><a href="#" class="btn btn-primary">Read More</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr/>
+
+    <!-- List  groups -->
+    <h2>List Groups <span class="label label-default">New</span></h2>
+    <h3>My Mailbox</h3>
+    <div class='list-group'>
+      <a class="list-group-item active" href="">Inbox <span class="badge">14</span></a>
+      <a class="list-group-item" href="">Sent</a>
+      <a class="list-group-item" href="">Drafts</a>
+      <a class="list-group-item" href="">Deleted</a>
+      <a class="list-group-item">Spam</a>
+      </ul>
+    </div>
+
+    <hr/>
+
+    <!-- Navigation - tabs -->
+    <h2>Navigation - Tabs</h2>
+    <ul class="nav nav-tabs">
+      <li class="active">
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Activity</a>
+      </li>
+      <li>
+        <a href="#">Liked Pages</a>
+      </li>
+    </ul>
+
+    <hr/>
+
+    <!-- Navigation - pills -->
+    <h2>Navigation - Pills</h2>
+    <ul class="nav nav-pills">
+      <li class="active">
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Activity</a>
+      </li>
+      <li>
+        <a href="#">Liked Pages</a>
+      </li>
+    </ul>
+
+    <hr/>
+
+    <!-- Navigation - vertically stacked pills -->
+    <h2>Navigation - Vertically Stacked Pills</h2>
+    <ul class="nav nav-pills nav-stacked">
+      <li class="active">
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Activity</a>
+      </li>
+      <li>
+        <a href="#">Liked Pages</a>
+      </li>
+    </ul>
+
+    <hr/>
+
+    <!-- Basic form -->
+    <h2>Basic Form</h2>
+    <form class="form">
+      <div class="form-group">
+        <label for="nameField">Name</label>
+        <input type="text" class="form-control" id="nameField" placeholder="Name" />
+      </div>
+      <div class="form-group">
+        <label for="emailField">Email</label>
+        <input type="email" class="form-control" id="emailField" placeholder="Email address" />
+      </div>
+      <div class="form-group">
+        <label for="phoneField">Phone</label>
+        <input type="text" class="form-control" id="phoneField" placeholder="Phone number" />
+      </div>
+      <div class="form-group">
+        <label for="descField">Description</label>
+        <textarea class="form-control" id="descField" placeholder="Your comments"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="reset" class="btn btn-default">Reset</button>
+    </form>
+
+    <hr/>
+
+    <!-- Horizontal form -->
+    <h2>Horizontal Form</h2>
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="nameField" class="col-xs-2">Name</label>
+        <div class="col-xs-10">
+          <input type="text" class="form-control" id="nameField" placeholder="Name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="emailField" class="col-xs-2">Email</label>
+        <div class="col-xs-10">
+          <input type="email" class="form-control" id="emailField" placeholder="Email address" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="phoneField" class="col-xs-2">Phone</label>
+        <div class="col-xs-10">
+          <input type="text" class="form-control" id="phoneField" placeholder="Phone number" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="descField" class="col-xs-2">Description</label>
+        <div class="col-xs-10">
+          <textarea class="form-control" id="descField" placeholder="Your comments" disabled></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="reset" class="btn btn-default">Reset</button>
+    </form>
+
+    <hr/>
+
+    <!-- Inline form -->
+    <h2>Inline Form</h2>
+    <div class="well well-sm">
+      <form class="form-inline">
+        <div class="form-group">
+          <input type="email" class="form-control input-sm" id="emailField" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control input-sm" id="passwordField" placeholder="Password">
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" /> Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-xs">Sign in</button>
+      </form>
+    </div>
+
+
+    <script src="js/jquery-2.1.1.min.js" charset="utf-8"></script>
+    <script src="js/bootstrap.js" charset="utf-8"></script>
+    <script src="http://localhost:35729/livereload.js"></script>
+</body>
+
+</html>

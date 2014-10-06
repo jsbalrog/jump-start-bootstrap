@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Plugins</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+  <div class="container">
+    <ul class="nav nav-pills">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown">
+        <a class="myDropdownHandle" data-toggle="dropdown" data-target="#" href="#">
+          Profile <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Messages</a></li>
+    </ul>
+
+    <hr>
+
+    <button type="button" class="btn btn-lg btn-default" data-toggle="button">Toggle Me!</button>
+
+    <hr>
+
+    <div class="btn-group" data-toggle="buttons">
+      <label for="" class="btn btn-default">
+        <input type="radio" name="options" value="1"> Option 1
+      </label>
+      <label for="" class="btn btn-default">
+        <input type="radio" name="options" value="2"> Option 2
+      </label>
+      <label for="" class="btn btn-default">
+        <input type="radio" name="options" value="3"> Option 3
+      </label>
+    </div>
+  </div>
+
+
+
+  <script src="js/jquery-2.1.1.min.js" charset="utf-8"></script>
+  <script src="js/bootstrap.js" charset="utf-8"></script>
+  <script src="http://localhost:35729/livereload.js"></script>
+</body>
+
+</html>

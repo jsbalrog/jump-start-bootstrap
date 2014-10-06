@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Plugins</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <style type="text/css">
+    body {
+      overflow: hidden;
+    }
+    .scrollspy-example {
+      position:relative;
+      height:200px;
+      margin-top:10px;
+      overflow:auto;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav id="navbarExample" class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbarLinks">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">SitePoint</a>
+      </div>
+      <div class="collapse navbar-collapse navbarLinks">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#home">Home</a></li>
+          <li class=""><a href="#about">About</a></li>
+          <li class=""><a href="#contact">Contact Us</a></li>
+          <li class=""><a href="#map">Map</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div data-spy="scroll" data-target="#navbarExample" data-offset="0" class="scrollspy-example">
+      <h4 id="home">Home</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum aperiam pariatur, recusandae sed, minima deserunt quis cum facere adipisci accusamus consequatur, eum sint officiis, velit ipsam minus mollitia laudantium magnam!
+      </p>
+
+      <h4 id="about">About</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestiae repellat nulla quasi saepe ea fuga nesciunt fugit, explicabo ipsam repudiandae quis eveniet pariatur, ipsum ad perspiciatis nobis, libero impedit.
+      </p>
+
+      <h4 id="contact">Contact Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, nisi, vel cumque, magni fugit dicta vero labore id debitis excepturi delectus laudantium assumenda animi, aperiam harum velit repudiandae. Ratione, optio?
+      </p>
+
+      <h4 id="map">Map</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ab expedita, nihil facere suscipit eligendi beatae iusto, voluptate itaque nostrum error alias aut culpa molestiae quam quos ipsa quo aspernatur!
+      </p>
+    </div>
+  </div>
+  <script src="js/jquery-2.1.1.min.js" charset="utf-8"></script>
+  <script src="js/bootstrap.js" charset="utf-8"></script>
+  <script src="http://localhost:35729/livereload.js"></script>
+</body>
+
+</html>
